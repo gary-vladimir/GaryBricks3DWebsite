@@ -1,0 +1,116 @@
+div {
+    border: 1px solid orangered;
+}
+#container {
+    display: grid;
+    width: 98vw;
+    margin: auto;
+    border: 2px solid blue;
+    grid-template-columns: 25vw 25vw 25vw 15vw;
+    grid-template-rows: 5vh 35vh 45vh 5vh;
+    gap: 25px;
+    justify-content: center;
+    grid-template-areas:
+        'nav nav nav nav'
+        'top top top about'
+        'one two three popular'
+        'foo foo foo foo';
+}
+#container2 {
+    grid-area: top;
+    display: grid;
+    grid-template-columns: auto 400px;
+    grid-template-rows: auto 10vh;
+    grid-template-areas:
+        'ti ti'
+        'bl br';
+}
+#title {
+    grid-area: ti;
+}
+#media {
+    grid-area: br;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    grid-area: nav;
+}
+
+#one {
+    grid-area: one;
+}
+#two {
+    grid-area: two;
+}
+#three {
+    grid-area: three;
+}
+#foo {
+    grid-area: foo;
+}
+#about {
+    grid-area: about;
+}
+#popular {
+    grid-area: popular;
+}
+
+.links {
+    width: 120px;
+}
+.links:hover {
+    background-color: rgba(220, 220, 220, 0.5);
+}
+#current {
+    background-color: lightblue;
+}
+input[type='text'] {
+    position: absolute;
+    color: black;
+    right: 0px;
+    padding: 1.1vh;
+    font-size: 17px;
+}
+
+img {
+    width: 95%;
+    margin: 2.5%;
+    float: left;
+}
+p {
+    margin: 15px;
+}
+@media (max-width: 1200px) {
+    #container {
+        width: 98vw;
+        margin: auto;
+        grid-template-columns: 5vw 85vw 5vw;
+        grid-template-rows: 5vh 35vh repeat(5, 15vh) 5vh;
+        grid-template-areas:
+            '. nav .'
+            '. top .'
+            '. one .'
+            '. two .'
+            '. three .'
+            '. popular .'
+            '. about .'
+            'foo foo foo';
+    }
+    img {
+        height: 100%;
+        width: auto;
+        margin: auto;
+        margin-right: 10px;
+    }
+    p {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 720px) {
+    .links {
+        width: 50px;
+    }
+}
