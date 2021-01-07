@@ -1,6 +1,3 @@
-div {
-    /*border: 1px solid black;*/
-}
 #container {
     display: grid;
     width: 98vw;
@@ -14,16 +11,16 @@ div {
         'nav nav nav nav'
         'top top top about'
         'one two three popular'
-        'foo foo foo foo';
+        'foo foo foo foo ';
 }
 #container2 {
     grid-area: top;
     display: grid;
-    grid-template-columns: auto 400px;
-    grid-template-rows: auto 10vh;
+    grid-template-columns: auto 230px 30px;
+    grid-template-rows: auto 45mm;
     grid-template-areas:
-        'ti ti'
-        'bl br';
+        'ti ti as'
+        'bl br as';
 }
 #title {
     grid-area: ti;
@@ -33,7 +30,7 @@ div {
 }
 
 .nav {
-    border: 2px solid dimgray;
+    border: 1px solid white;
     position: relative;
     display: flex;
     grid-area: nav;
@@ -62,11 +59,9 @@ div {
     width: 120px;
 }
 .links:hover {
-    background-color: #f77f00;
+    opacity: 60%;
 }
-#current {
-    background-color: lightblue;
-}
+
 input[type='text'] {
     position: absolute;
     color: black;
@@ -99,7 +94,7 @@ p {
             '. three .'
             '. popular .'
             '. about .'
-            '. foo .';
+            'foo foo foo';
     }
     .po {
         height: 100%;

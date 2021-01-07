@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 #about,
 #popular,
@@ -30,20 +30,18 @@
     padding: 15px;
 }
 .nav {
-    background-color: #14213d;
+    background-color: #023e8a;
 }
 .links {
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
-    border-right: 2px solid #14213d;
-    background-color: #fca311;
-    color: #14213d;
-    font-family: 'Archivo Black', sans-serif;
+    border-right: 1px solid #fff;
+    font-family: 'Roboto Slab', serif;
 }
 #current {
-    background-color: #d62828;
+    background-color: #4cc9f0;
 }
 
 #container2 {
@@ -74,5 +72,49 @@
 }
 
 #ti {
-    width: 70vw;
+    width: 55vw;
+}
+#black {
+    color: black;
+}
+#white {
+    color: white;
+}
+.container3 {
+    height: 42vh;
+}
+h3 {
+    margin-top: -5px;
+}
+
+@media (max-width: 1200px) {
+    #ti {
+        width: 70vw;
+    }
+    .container3 {
+        height: 11vh;
+    }
+    #pop {
+        position: absolute;
+    }
+    .container3 > ul > li {
+        margin-left: 10vw;
+    }
+}
+
+.container3 > ul {
+    display: flex;
+    flex-flow: column wrap;
+    height: inherit;
+    width: inherit;
+    margin: 0;
+}
+
+.container3 > ul > li {
+    flex: 0 0 auto;
+}
+@media (max-width: 1200px) {
+    .container3 > ul > li {
+        font-size: 1.3vmax;
+    }
 }
