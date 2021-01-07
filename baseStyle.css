@@ -1,5 +1,5 @@
 div {
-    border: 1px solid orangered;
+    /*border: 1px solid black;*/
 }
 #container {
     display: grid;
@@ -33,6 +33,7 @@ div {
 }
 
 .nav {
+    border: 2px solid dimgray;
     position: relative;
     display: flex;
     grid-area: nav;
@@ -61,7 +62,7 @@ div {
     width: 120px;
 }
 .links:hover {
-    background-color: rgba(220, 220, 220, 0.5);
+    background-color: #f77f00;
 }
 #current {
     background-color: lightblue;
@@ -74,14 +75,16 @@ input[type='text'] {
     font-size: 17px;
 }
 
-img {
+.po {
     width: 95%;
     margin: 2.5%;
     float: left;
 }
 p {
     margin: 15px;
+    font-size: 1em;
 }
+
 @media (max-width: 1200px) {
     #container {
         width: 98vw;
@@ -96,9 +99,9 @@ p {
             '. three .'
             '. popular .'
             '. about .'
-            'foo foo foo';
+            '. foo .';
     }
-    img {
+    .po {
         height: 100%;
         width: auto;
         margin: auto;
@@ -106,11 +109,5 @@ p {
     }
     p {
         margin: 10px;
-    }
-}
-
-@media (max-width: 720px) {
-    .links {
-        width: 50px;
     }
 }
